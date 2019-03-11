@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <link href="F:\Phone\style.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    </head>
+    <body>
+        <h1>Phone Directory</h1>
+        <div class="mpd-table-container" id = "mpdContainer">
+            <div class="mpd-table-row">
+                <div class="mpd-table-colummn mpd-name mpd-header">Name</div>
+                <div class="mpd-table-column mpd-phone mpd-header">Contact Number</div>
+                <div class="mpd-table-colummn mpd-header mpd-add" id="addEntry">+</div>
+            </div>
+            <span id="table-body"></span>
+        </div>
+        <div class="disable-modal" id="back"></div>
+        <div class="disable-modal" id="newModel">
+            <h1>Add New Subscriber</h1>
+
+            <label for="newPerson">Name</label>
+            <input type="text" id="newPerson">
+
+            <label for="newContact">Contact</label>
+            <input type="text" id="newContact">
+
+            <button id="newCancelBtn">Cancel</button>
+            <button id="newSubmitBtn">Submit</button>
+        </div>
+
+        <button id="clearBtn" style="position:absolute; right:0px; bottom:0px;">Empty Storage</button>
+
+        <script src = "script.js"></script>
+    </body>
+</html>

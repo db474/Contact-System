@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body {
+    background-image: url("back.jpg");
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position: center center;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+    text-shadow: 5px 5px 5px black;
+}
+.mpd-table-container {
+    font-size: 20px;
+    margin-top: 30px;
+    width: 80%;
+    margin: auto;
+}
+.mpd-table-row {
+    display: flex;
+}
+.mpd-table-column {
+    background-color: rgba(236,54,68,0.8);
+    margin: 2px;
+    padding: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.mpd-name {
+    flex-basis: 20%;
+}
+.mpd-phone {
+    flex-basis: 20%;
+}
+.mpd-header { 
+    background-color: rgba(236,54,68,1);
+    font-weight: bolder;
+}
+.mpd-edit, .mpd-delete, .mpd-add {
+    flex-basis: 5%;
+    text-align: center;
+    cursor: pointer;
+}
+#newPerson {
+    width: 500px;
+    padding: 10px;
+    border-radius: 5px; 
+    z-index: 99;
+    top: 50px;
+    position: absolute;
+    margin-left: calc(50% - 250px);
+    background-color: rgba(236,54,68,1);
+}
+#newModel input {
+    display: block;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 3px;
+    width: 100%
+}
+.input-err {
+    background-color: rgba(236,54,68,1);;
+}
+#back {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 50;
+    top: 0;
+    left: 0;
+}
+#newSubmitBtn {
+    background-color: rgba(0,153,255);
+}
+#newCancelBtn {
+    background-color:rgba(236,54,68,1);
+}
+button {
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    float: right;
+    margin: 5px;
+    cursor: pointer;
+}
+button:hover {
+    padding: 14px;
+}
+.disable-modal {
+    visibility: hidden;
+}
+.enable-modal {
+    visibility: visible;
+}
+i {
+    pointer-events: none;
+}
